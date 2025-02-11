@@ -6,12 +6,14 @@
   --clr-light-cream: #fefcf7;
   --clr-grey: #83888f;
 
-  /*** Primary Colors ***/
+  /*** Interactibles ***/  
   --clr-primary: var(--clr-dark-cyan);
   --clr-primary-hover: #66d2cf;
+  --clr-primary-disabled: #e2dedb;
 
-  /*** Interactibles ***/
-  --clr-disabled: #e2dedb;
+  --clr-selection: var(--clr-light-cream);
+  --clr-selection-hover: var(--clr-pale-orange);
+  --clr-selection-active: var(--clr-dark-cyan);
 
   /*** Surfaces ***/
   --clr-base: var(--clr-dark-grey-blue);
@@ -28,6 +30,12 @@
   --clr-text-2-disabled: #c1c4c7;
 
   font-size: 16px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Barlow', sans-serif;
 }
 
 h1,
@@ -59,4 +67,9 @@ h4 {
     font-size: 9.375rem;
     text-transform: lowercase;
     color: var(--clr-grey);
+}
+
+nav {
+    font-size: 0.75rem;
+    font-weight: 700;
 }
