@@ -1,20 +1,31 @@
 :root {
+    /*** Predefined Colors ***/
   --clr-dark-cyan: #0e8784;
   --clr-dark-grey-blue: #333d4b;
   --clr-pale-orange: #fdd6ba;
   --clr-light-cream: #fefcf7;
   --clr-grey: #83888f;
 
+  /*** Primary Colors ***/
   --clr-primary: var(--clr-dark-cyan);
   --clr-primary-hover: #66d2cf;
+
+  /*** Interactibles ***/
   --clr-disabled: #e2dedb;
+
+  /*** Surfaces ***/
   --clr-base: var(--clr-dark-grey-blue);
   --clr-surface: var(--clr-grey);
 
+  /*** On-Surfaces ***/
   --clr-on-primary: var(--clr-light-cream);
   --clr-on-base: var(--clr-light-cream);
   --clr-on-surface: var(--clr-light-cream);
-  --clr-text: var(--clr-dark-grey-blue);
+
+  /*** Other Text ***/
+  --clr-text-1: var(--clr-dark-grey-blue);
+  --clr-text-2: var(--clr-grey);
+  --clr-text-2-disabled: #c1c4c7;
 
   font-size: 16px;
 }
