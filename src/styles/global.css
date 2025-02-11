@@ -1,0 +1,51 @@
+:root {
+  --clr-dark-cyan: #0e8784;
+  --clr-dark-grey-blue: #333d4b;
+  --clr-pale-orange: #fdd6ba;
+  --clr-light-cream: #fefcf7;
+  --clr-grey: #83888f;
+
+  --clr-primary: var(--clr-dark-cyan);
+  --clr-primary-hover: #66d2cf;
+  --clr-disabled: #e2dedb;
+  --clr-base: var(--clr-dark-grey-blue);
+  --clr-surface: var(--clr-grey);
+
+  --clr-on-primary: var(--clr-light-cream);
+  --clr-on-base: var(--clr-light-cream);
+  --clr-on-surface: var(--clr-light-cream);
+  --clr-text: var(--clr-dark-grey-blue);
+
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.title-alt-big {
+    font-family: 'Fraunces', serif;
+    font-size: 9.375rem;
+    text-transform: lowercase;
+    color: var(--clr-grey);
+}
