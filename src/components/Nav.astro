@@ -1,5 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/shared/desktop/logo.svg';
+---
+
 <nav class='max-width'>
-  <div>Logo</div>
+  <div>
+    <Image
+      src={logo}
+      alt={'Coffeeroasters'}
+    />
+  </div>
   <ul>
     <li><a href='/'>Home</a></li>
     <li><a href='/about'>About Us</a></li>
@@ -14,6 +24,8 @@
     justify-content: space-between;
 
     color: var(--clr-text-2);
+
+    padding-top: 2rem;
   }
 
   ul {
