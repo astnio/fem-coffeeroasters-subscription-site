@@ -1,11 +1,11 @@
 ---
 interface Props {
   type?: 'primary' | 'secondary';
-  isLink: boolean;
+  isLink?: boolean;
   url?: string;
 }
 
-const { type = 'primary', isLink, url } = Astro.props;
+const { type = 'primary', isLink = false, url } = Astro.props;
 
 const ButtonElement = isLink ? `a` : `button`;
 ---
