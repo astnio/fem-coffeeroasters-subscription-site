@@ -14,12 +14,18 @@ const ButtonElement = isLink ? `a` : `button`;
   a,
   button {
     border: none;
-    padding: 1rem;
     border-radius: var(--radius-button);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    font-weight: 900;
   }
 
   .primary {
-    background-color: red;
+    background-color: var(--clr-primary);
+    color: var(--clr-on-primary);
   }
 </style>
 
