@@ -10,6 +10,19 @@ const { type = 'primary', isLink = false, url } = Astro.props;
 const ButtonElement = isLink ? `a` : `button`;
 ---
 
+<style>
+  a,
+  button {
+    border: none;
+    padding: 1rem;
+    border-radius: var(--radius-button);
+  }
+
+  .primary {
+    background-color: red;
+  }
+</style>
+
 <ButtonElement
   class={type}
   {...isLink ? { href: url } : null}>
