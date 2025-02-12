@@ -21,11 +21,21 @@ const ButtonElement = isLink ? `a` : `button`;
     font-family: 'Fraunces', serif;
     text-decoration: none;
     font-weight: 900;
+
+    transition-property: background-color, color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
   }
 
-  .primary {
+  a.primary,
+  button.primary {
     background-color: var(--clr-primary);
     color: var(--clr-on-primary);
+  }
+
+  a.primary:hover,
+  button.primary:hover {
+    background-color: var(--clr-primary-hover);
   }
 </style>
 
