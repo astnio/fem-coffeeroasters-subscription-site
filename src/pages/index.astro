@@ -5,12 +5,36 @@ import background from '../assets/home/desktop/image-hero-coffeepress.jpg';
 
 <style>
   section.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
     background-image: url(/images/home/desktop/image-hero-coffeepress.jpg);
     color: var(--clr-on-primary);
+
+    border-radius: var(--border-radius);
+
+    padding-left: 8rem;
+
+    min-height: 37.5rem;
   }
 
   h1.hero-title {
     color: var(--clr-on-primary);
+    max-width: 12ch;
+    margin: 0;
+    line-height: 1.45ch;
+  }
+
+  p.hero-paragraph {
+    max-width: 46ch;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 </style>
 
@@ -18,7 +42,7 @@ import background from '../assets/home/desktop/image-hero-coffeepress.jpg';
   <section class='hero'>
     <h1 class='hero-title'>Great coffee made simple.</h1>
 
-    <p>
+    <p class='hero-paragraph'>
       Start your mornings with the world’s best coffees. Try our expertly
       curated artisan coffees from our best roasters delivered directly to your
       door, at your schedule.

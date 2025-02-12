@@ -29,6 +29,9 @@
   --clr-text-2: var(--clr-grey);
   --clr-text-2-disabled: #c1c4c7;
 
+  /*** Other Properties ***/
+  --border-radius: 10pt;
+
   font-size: 16px;
 }
 
