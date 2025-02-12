@@ -1,18 +1,17 @@
 ---
 interface Props {
-  type: 'primary' | 'secondary';
-  label: string;
+  type?: 'primary' | 'secondary';
   isLink: boolean;
   url?: string;
 }
 
-const { type, label, isLink, url } = Astro.props;
+const { type = 'primary', isLink, url } = Astro.props;
 
-const ButtonElement = isLink ? `button` : `a`;
+const ButtonElement = isLink ? `a` : `button`;
 ---
 
 <ButtonElement
   class={type}
   {...isLink ? { href: url } : null}>
-  <span>{label}</span>
+  <slot />
 </ButtonElement>
