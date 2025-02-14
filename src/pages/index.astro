@@ -10,7 +10,9 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     justify-content: center;
 
-    background-image: url(/images/home/desktop/image-hero-coffeepress.jpg);
+    background-image: url(/images/home/mobile/image-hero-coffeepress.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     border-radius: var(--radius-surface);
 
@@ -20,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
     color: var(--clr-on-primary);
     text-align: center;
 
-    min-height: 37.5rem;
+    height: 31.25rem;
   }
 
   h1.hero-title {
@@ -47,6 +49,10 @@ import Layout from '../layouts/Layout.astro';
       padding-inline: initial;
       padding-left: 8rem;
       text-align: start;
+
+      min-height: 37.5rem;
+
+      background-image: url(/images/home/desktop/image-hero-coffeepress.jpg);
     }
   }
 </style>
