@@ -40,8 +40,11 @@ body {
   background-color: var(--clr-light-cream);
 }
 
-p {
+p, .text {
   font-size: 0.9375rem;
+}
+
+p {
   font-weight: 400;
   font-family: 'Barlow', sans-serif;
 }
@@ -54,19 +57,19 @@ h4 {
   font-weight: 900;
 }
 
-h1 {
+h1, .heading-1 {
   font-size: 2.5rem;
 }
 
-h2 {
+h2, .heading-2 {
   font-size: 2.5rem;
 }
 
-h3 {
+h3, .heading-3 {
   font-size: 2rem;
 }
 
-h4 {
+h4, .heading-4 {
   font-size: 1.5rem;
 }
 
@@ -87,23 +90,23 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  p {
+  p, .text {
     font-size: 1rem;
   }
 
-  h1 {
+  h1, .heading-1 {
     font-size: 4.5rem;
   }
 
-  h2 {
+  h2, .heading-2 {
     font-size: 2.5rem;
   }
 
-  h3 {
+  h3, .heading-3 {
     font-size: 2rem;
   }
 
-  h4 {
+  h4, .heading-4 {
     font-size: 1.5rem;
   }
 }

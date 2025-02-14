@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <style>
+  /*** Section - Hero ***/
   section.hero {
     display: flex;
     flex-direction: column;
@@ -42,6 +43,11 @@ import Layout from '../layouts/Layout.astro';
     margin-bottom: 4rem;
   }
 
+  /*** Section - Our Collection ***/
+  h3.section-2-title {
+    text-transform: lowercase;
+  }
+
   @media screen and (min-width: 768px) {
     section.hero {
       align-items: start;
@@ -75,7 +81,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <section>
-    <h3>Our collection</h3>
+    <h3 class='section-2-title'>Our collection</h3>
 
     <h4>Gran Espresso</h4>
     <p>
