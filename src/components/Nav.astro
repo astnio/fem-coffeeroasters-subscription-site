@@ -19,9 +19,7 @@ import logo from '../assets/shared/desktop/logo.svg';
 
 <style>
   nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: none;
 
     color: var(--clr-text-2);
 
@@ -42,5 +40,13 @@ import logo from '../assets/shared/desktop/logo.svg';
     color: inherit;
     text-transform: uppercase;
     letter-spacing: 0.075rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 </style>
