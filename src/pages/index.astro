@@ -4,13 +4,26 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <style>
-  /*** Section - Hero ***/
-  section.hero {
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+
+  section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
 
+  /*** Section - Hero ***/
+  section.hero {
     background-image: url(/images/home/mobile/image-hero-coffeepress.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,12 +57,36 @@ import Layout from '../layouts/Layout.astro';
   }
 
   /*** Section - Our Collection ***/
+
   h3.section-2-title {
     text-transform: lowercase;
   }
 
+  section.section-2 > p {
+    max-width: 30ch;
+  }
+
   @media screen and (min-width: 768px) {
+    p,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: start;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+    }
+
     section.hero {
+      justify-content: center;
       align-items: start;
 
       padding-inline: initial;
@@ -80,8 +117,8 @@ import Layout from '../layouts/Layout.astro';
     </Button>
   </section>
 
-  <section>
-    <h3 class='section-2-title'>Our collection</h3>
+  <section class='section-2'>
+    <h3 class='section-2-title heading-1'>Our collection</h3>
 
     <h4>Gran Espresso</h4>
     <p>
