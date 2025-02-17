@@ -80,6 +80,12 @@ h4, .heading-4 {
   color: var(--clr-grey);
 }
 
+.text-gradient {
+  background: -webkit-linear-gradient(var(--clr-grey), transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 nav {
   font-size: 0.75rem;
   font-weight: 700;
